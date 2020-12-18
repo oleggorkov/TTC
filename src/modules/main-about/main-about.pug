@@ -1,0 +1,38 @@
+include ../helper-mixins/svg-mix
+
+block main-about
+    section.section
+        .main-about
+            .main-about__container
+                .main-about__wrapper
+                    h2.main-about__title что будет
+                        img(src='img/line-1.png')
+                    .main-about__info
+                        .main-about__info-item
+                            img(src='img/about.png')
+                            .main-about__info-item-block
+                                .main-about__info-item-title Препати
+                                .main-about__info-item-text Собираемся накануне конференции, чтобы познакомиться и осмотреться
+                                a(href='#').main-about__info-item-link Наши спикеры
+                                    +svg-mix('arrow')
+                        .main-about__info-item
+                            img(src='img/about-1.png')
+                            .main-about__info-item-block
+                                .main-about__info-item-title Доклады и дискуссии
+                                .main-about__info-item-text На этот раз делаем акцент на инновациях и продажах. Спикеры представят свою позицию и обсудим что с этим делать
+                                a(href='#').main-about__info-item-link Мероприятия
+                                    +svg-mix('arrow')
+                        .main-about__info-item
+                            .main-about__info-item-block
+                                .main-about__info-item-title Питающая обстановка
+                                .main-about__info-item-text Для личных бесед и бизнес-прогулок на территории парк-отеля есть беседки, облагороженный пруд и мангальная зона
+                                a(href='#').main-about__info-item-link Место встречи
+                                    +svg-mix('arrow')
+                            img(src='img/about-2.png')
+                        .main-about__info-item
+                            .main-about__info-item-block
+                                .main-about__info-item-title Тусовки, игры и инсайты
+                                .main-about__info-item-text А также плов, тусовки у воды, stand up и похмельные дебаты о главных вопросах - кто, виноват, что делать и почему мы все не умрем
+                                a(href='#').main-about__info-item-link Тезисы прошлой встречи
+                                    +svg-mix('arrow')
+                            img(src='img/about-3.png')

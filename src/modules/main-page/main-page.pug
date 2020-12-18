@@ -1,0 +1,43 @@
+include ../helper-mixins/svg-mix
+
+block main-page
+    section.section
+        .main-page
+            .main-page__container
+                .main-page__wrapper
+                    .main-page__date 16-19 СЕНТЯБРЯ 2021
+                    .main-page__title
+                        img(src='img/line-1.png')
+                        +svg-mix('bober')
+                        p И это оффлайн?
+                        span новая тусовка —
+                        img(src='img/line-2.png')
+                        span в новом формате!
+                    .main-page__info Ежегодная закрытая встреча профессионалов телеком-бизнеса в неформальном обстановке, на природе - не покидая столицу!
+                    .main-page__address
+                        +svg-mix('map')
+                        .main-page__address-block
+                            p Vnukovo Village Park-hotel
+                            span Москва, Картмазово, ул. Киевская, д. 4
+                    .main-page__stat
+                        .main-page__stat-item
+                            span 3
+                            p дня насыщенные общением, инсайтами и развлечением
+                        .main-page__stat-item
+                            span 26
+                            p встреч, где можно обсудить настоящее и договориться о будущем
+                        .main-page__stat-item
+                            span 350
+                            p единомышленников, будущих партнеров и просто хороших людей
+                        .main-page__stat-item
+                            span &#8734
+                            p удовольствие и радость от встречи
+                    .main-page__extra
+                        | мы считаем необходимым встречаться с единомышленниками, обсуждать происходящее и договариваться
+                        | о будущем, узнавать о технических новинках, инновационных решениях и реальной текущей работе телеком-компаний
+                    img(src='img/semicircle.png').main-page__img
+            a(href='#').main-page__message
+                +svg-mix('message')
+        include ../main-about/main-about
+        include ../main-speak/main-speak
+

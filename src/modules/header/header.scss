@@ -1,0 +1,191 @@
+.header {
+  width: 100%;
+  max-width: 138rem;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    width: 100%;
+    max-width: 192rem;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    margin: 0 auto;
+    padding: 0 2rem;
+
+  }
+
+  &__wrapper {
+    width: 100%;
+    max-width: 134rem;
+    height: 10.9rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__mobile-toggle {
+    width: 3.5rem;
+    height: 3.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    background: transparent;
+
+    border: none;
+
+    @include above($tablet) {
+      display: none;
+    }
+
+    &:focus {
+      &:after, &:before, & span {
+        background: $main-black;
+      }
+    }
+
+    &:after, &:before {
+      width: 3.5rem;
+      height: 0.7rem;
+
+      content: '';
+
+      display: block;
+      position: absolute;
+
+    }
+
+    &:after {
+      top: 0;
+    }
+
+    &:before {
+      bottom: 0;
+    }
+
+    span {
+      width: 3.5rem;
+      height: 0.7rem;
+
+    }
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    li {
+      white-space: nowrap;
+
+      &:not(:last-of-type) {
+        margin-right: 3.7rem;
+      }
+
+      &:first-of-type {
+        position: relative;
+        a {
+          color: $main-blue;
+
+          &:hover, &:focus {
+            color: $main-black;
+          }
+        }
+
+        img {
+          position: absolute;
+          width: 3.4rem;
+          height: 0.6rem;
+          top: -0.8rem;
+        }
+      }
+
+      a {
+        display: flex;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.8rem;
+        text-transform: uppercase;
+        color: $main-black;
+
+        &:hover, &:focus {
+          color: $main-blue;
+        }
+      }
+    }
+  }
+
+  &__clients {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-partner {
+      width: 15rem;
+      height: 3.8rem;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      white-space: nowrap;
+
+      border: 0.1rem solid $main-blue;
+      background: #FFFFFF;
+      color: $main-blue;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1.4rem;
+      font-variant: small-caps;
+
+      margin-right: 1rem;
+
+      transition: color .25s, border .25s;
+
+      &:hover, &:focus {
+        color: $light-blue;
+        border: 0.1rem solid $light-blue;
+      }
+    }
+
+    &-part {
+      width: 17.5rem;
+      height: 3.8rem;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      white-space: nowrap;
+
+      background: $main-blue;
+      color: #FFFFFF;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1.4rem;
+      font-variant: small-caps;
+
+      transition: color .25s, background .25s;
+
+      &:hover, &:focus {
+        background: $light-blue;
+      }
+    }
+  }
+}
